@@ -1,0 +1,15 @@
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\bin\Debug\Group47App.exe.config
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\bin\Debug\Group47App.exe
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\bin\Debug\Group47App.pdb
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\Group47App.csprojAssemblyReference.cache
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\MainWindow.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\App.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\Group47App_MarkupCompile.cache
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\Group47App_MarkupCompile.lref
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\MainWindow.baml
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\Group47App.g.resources
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\Group47App.Properties.Resources.resources
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\Group47App.csproj.GenerateResource.cache
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\Group47App.csproj.CoreCompileInputs.cache
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\Group47App.exe
+C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\Group47App.pdb

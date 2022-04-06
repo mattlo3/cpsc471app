@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\obj\Debug\
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\
 Group47App
 none
 false
 DEBUG;TRACE
-C:\Users\Matthew Low\Desktop\School\cpsc 471\app\Group47App\App.xaml
-11151548125
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\App.xaml
+3-2063308997
 
-5-2017746502
+7-610701184
 13-1505183044
-MainWindow.xaml;
+BasePage.xaml;MainPage.xaml;Window1.xaml;
 
 False
 

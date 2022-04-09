@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Group47App"
         mc:Ignorable="d"
         Title="MainPage" Height="578" Width="282"
-        Background="DarkSlateGray"
+        Background="GhostWhite"
         >
     <Grid Name="Window1">
 
@@ -27,7 +27,7 @@
 
         </Grid>
 
-        <Grid Background="ForestGreen" Grid.ColumnSpan="3" Grid.Row="1">
+        <Grid Background="Black" Grid.ColumnSpan="3" Grid.Row="1">
 
         </Grid>
 
@@ -75,7 +75,7 @@
                    HorizontalAlignment="Center"/>
 
         <StackPanel Name="Menu"
-                    Background="ForestGreen"
+                    Background="Black"
                     Height="50"
                     Width="94"
                     Grid.Column="0"
@@ -84,6 +84,7 @@
                     VerticalAlignment="Top"
                     HorizontalAlignment="Left"
                     MouseDown="Menu_MouseDown">
+
 
             <Label Content="MENU"
                    Foreground="White"
@@ -96,8 +97,8 @@
                     Width="94"
                     HorizontalAlignment="Center"
                     Foreground="White"
-                    Background="DarkGreen"
-                    BorderBrush="White"
+                    Background="#222"
+                    BorderBrush="#222"
                     Margin="0, 40, 0, 0"
                     Click="BuyButton_Click"/>
 
@@ -107,8 +108,8 @@
                     Width="94"
                     HorizontalAlignment="Center"
                     Foreground="White"
-                    Background="DarkGreen"
-                    BorderBrush="White"
+                    Background="#222"
+                    BorderBrush="#222"
                     Margin="0, 10, 0, 0"
                     Click="SellButton_Click"/>
 
@@ -118,8 +119,8 @@
                     Width="94"
                     HorizontalAlignment="Center"
                     Foreground="White"
-                    Background="DarkGreen"
-                    BorderBrush="White"
+                    Background="#222"
+                    BorderBrush="#222"
                     Margin="0, 10, 0, 0"
                     Click="AppraiseButton_Click"/>
 
@@ -129,8 +130,8 @@
                     Width="94"
                     HorizontalAlignment="Center"
                     Foreground="White"
-                    Background="DarkGreen"
-                    BorderBrush="White"
+                    Background="#222"
+                    BorderBrush="#222"
                     Margin="0, 10, 0, 0"
                     Click="TipsButton_Click"/>
 
@@ -140,8 +141,8 @@
                     Width="94"
                     HorizontalAlignment="Center"
                     Foreground="White"
-                    Background="DarkGreen"
-                    BorderBrush="White"
+                    Background="#222"
+                    BorderBrush="#222"
                     Margin="0, 10, 0, 0"
                     Click="FAQButton_Click"/>
 
@@ -151,8 +152,8 @@
                     Width="94"
                     HorizontalAlignment="Center"
                     Foreground="White"
-                    Background="DarkGreen"
-                    BorderBrush="White"
+                    Background="#222"
+                    BorderBrush="#222"
                     Margin="0, 10, 0, 0"
                     Click="ContactButton_Click"/>
 
@@ -162,15 +163,15 @@
                     Width="94"
                     HorizontalAlignment="Center"
                     Foreground="White"
-                    Background="DarkGreen"
-                    BorderBrush="White"
+                    Background="#222"
+                    BorderBrush="#222"
                     Margin="0, 45, 0, 0"
                     Click="SignInButton_Click"/>
 
         </StackPanel>
 
         <StackPanel Name="Logo"
-                    Background="ForestGreen"
+                    Background="Black"
                     Height="50"
                     Width="94"
                     Grid.Column="1"
@@ -187,7 +188,7 @@
         </StackPanel>
 
         <StackPanel Name="Noti"
-                    Background="ForestGreen"
+                    Background="Black"
                     Height="50"
                     Width="94"
                     Grid.Column="2"

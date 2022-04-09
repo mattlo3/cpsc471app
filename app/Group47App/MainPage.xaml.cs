@@ -46,12 +46,12 @@ namespace Group47App
             if(Menu.Height == 50)
             {
                 Menu.Height += 300;
-                Menu.Background = (SolidColorBrush)new BrushConverter().ConvertFromString("DarkGreen");
+                Menu.Background = (SolidColorBrush)new BrushConverter().ConvertFromString("#333");
             }
             else
             {
                 Menu.Height -= 300;
-                Menu.Background = (SolidColorBrush)new BrushConverter().ConvertFromString("ForestGreen");
+                Menu.Background = (SolidColorBrush)new BrushConverter().ConvertFromString("Black");
             }
         }
 
@@ -60,48 +60,62 @@ namespace Group47App
             if (Noti.Height == 50)
             {
                 Noti.Height += 300;
-                Noti.Background = (SolidColorBrush)new BrushConverter().ConvertFromString("DarkGreen");
+                Noti.Background = (SolidColorBrush)new BrushConverter().ConvertFromString("#333");
             }
             else
             {
                 Noti.Height -= 300;
-                Noti.Background = (SolidColorBrush)new BrushConverter().ConvertFromString("ForestGreen");
+                Noti.Background = (SolidColorBrush)new BrushConverter().ConvertFromString("Black");
             }
         }
 
         private void BuyButton_Click(object sender, RoutedEventArgs e)
         {
+            var nav = NavigationService.GetNavigationService(this);
 
+            nav.Navigate(new BuyPage());
         }
 
         private void SellButton_Click(object sender, RoutedEventArgs e)
         {
+            var nav = NavigationService.GetNavigationService(this);
 
+            nav.Navigate(new SellPage());
         }
 
         private void AppraiseButton_Click(object sender, RoutedEventArgs e)
         {
+            var nav = NavigationService.GetNavigationService(this);
 
+            nav.Navigate(new AppraisePage());
         }
 
         private void TipsButton_Click(object sender, RoutedEventArgs e)
         {
+            var nav = NavigationService.GetNavigationService(this);
 
+            nav.Navigate(new TipsPage());
         }
 
         private void FAQButton_Click(object sender, RoutedEventArgs e)
         {
+            var nav = NavigationService.GetNavigationService(this);
 
+            nav.Navigate(new FAQPage());
         }
 
         private void ContactButton_Click(object sender, RoutedEventArgs e)
         {
+            var nav = NavigationService.GetNavigationService(this);
 
+            nav.Navigate(new ContactPage());
         }
 
         private void SignInButton_Click(object sender, RoutedEventArgs e)
         {
+            var nav = NavigationService.GetNavigationService(this);
 
+            nav.Navigate(new SignInPage());
         }
 
         private void Logo_MouseDown(object sender, MouseButtonEventArgs e)

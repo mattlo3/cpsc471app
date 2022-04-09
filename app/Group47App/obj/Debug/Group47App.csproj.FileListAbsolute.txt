@@ -32,3 +32,17 @@ C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug
 C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\Window1.baml
 C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\BasePage.g.cs
 C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\BasePage.baml
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\BuyPage.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\SellPage.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\AppraisePage.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\TipsPage.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\FAQPage.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\ContactPage.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\SignInPage.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\SellPage.baml
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\AppraisePage.baml
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\TipsPage.baml
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\FAQPage.baml
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\ContactPage.baml
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\SignInPage.baml
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\BuyPage.baml

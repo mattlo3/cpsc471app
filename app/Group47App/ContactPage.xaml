@@ -1,0 +1,201 @@
+﻿<Page x:Class="Group47App.ContactPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group47App"
+        mc:Ignorable="d"
+        Title="MainPage" Height="578" Width="282"
+        Background="GhostWhite"
+        >
+    <Grid Name="Window1">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="Black" Grid.ColumnSpan="3" Grid.Row="0">
+
+        </Grid>
+
+        <Grid Background="Black" Grid.ColumnSpan="3" Grid.Row="1">
+
+        </Grid>
+
+        <Grid Background="GhostWhite" Grid.ColumnSpan="3" Grid.Row="2">
+            <Label Content="Contact Us"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontWeight="Bold"/>
+        </Grid>
+
+        <Grid Grid.ColumnSpan="3" Grid.Row="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <TextBlock Text="Vehi Co"
+                   Foreground="White"
+                   Grid.Column="0"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+
+        <TextBlock Text="18:06"
+                   Foreground="White"
+                   Grid.Column="2"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+
+        <StackPanel Name="Menu"
+                    Background="Black"
+                    Height="50"
+                    Width="94"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Grid.RowSpan="3"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    MouseDown="Menu_MouseDown">
+
+            <Label Content="MENU"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   Margin="0, 10, 0, 0"/>
+
+            <Button Name="BuyButton"
+                    Content="Buy Online" 
+                    Height="25" 
+                    Width="94"
+                    HorizontalAlignment="Center"
+                    Foreground="White"
+                    Background="#222"
+                    BorderBrush="#222"
+                    Margin="0, 40, 0, 0"
+                    Click="BuyButton_Click"/>
+
+            <Button Name="SellButton"
+                    Content="Sell My Car" 
+                    Height="25" 
+                    Width="94"
+                    HorizontalAlignment="Center"
+                    Foreground="White"
+                    Background="#222"
+                    BorderBrush="#222"
+                    Margin="0, 10, 0, 0"
+                    Click="SellButton_Click"/>
+
+            <Button Name="AppraiseButton"
+                    Content="Appraisal" 
+                    Height="25" 
+                    Width="94"
+                    HorizontalAlignment="Center"
+                    Foreground="White"
+                    Background="#222"
+                    BorderBrush="#222"
+                    Margin="0, 10, 0, 0"
+                    Click="AppraiseButton_Click"/>
+
+            <Button Name="TipsButton"
+                    Content="Tips" 
+                    Height="25" 
+                    Width="94"
+                    HorizontalAlignment="Center"
+                    Foreground="White"
+                    Background="#222"
+                    BorderBrush="#222"
+                    Margin="0, 10, 0, 0"
+                    Click="TipsButton_Click"/>
+
+            <Button Name="FAQButton"
+                    Content="FAQ" 
+                    Height="25" 
+                    Width="94"
+                    HorizontalAlignment="Center"
+                    Foreground="White"
+                    Background="#222"
+                    BorderBrush="#222"
+                    Margin="0, 10, 0, 0"
+                    Click="FAQButton_Click"/>
+
+            <Button Name="ContactButton"
+                    Content="Contact Us" 
+                    Height="25" 
+                    Width="94"
+                    HorizontalAlignment="Center"
+                    Foreground="White"
+                    Background="#222"
+                    BorderBrush="#222"
+                    Margin="0, 10, 0, 0"
+                    Click="ContactButton_Click"/>
+
+            <Button Name="SignInButton"
+                    Content="Sign In" 
+                    Height="25" 
+                    Width="94"
+                    HorizontalAlignment="Center"
+                    Foreground="White"
+                    Background="#222"
+                    BorderBrush="#222"
+                    Margin="0, 45, 0, 0"
+                    Click="SignInButton_Click"/>
+
+        </StackPanel>
+
+        <StackPanel Name="Logo"
+                    Background="Black"
+                    Height="50"
+                    Width="94"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    MouseDown="Logo_MouseDown">
+
+            <Label Content="LOGO"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   Margin="0, 10, 0, 0"/>
+            
+        </StackPanel>
+
+        <StackPanel Name="Noti"
+                    Background="Black"
+                    Height="50"
+                    Width="94"
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    Grid.RowSpan="3"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center"
+                    MouseDown="Noti_MouseDown">
+            
+            <Label Content="NOTI"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   Margin="0, 10, 0, 0"/>
+
+
+        </StackPanel>
+        
+        
+
+    </Grid>
+</Page>

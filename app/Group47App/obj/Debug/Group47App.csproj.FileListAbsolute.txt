@@ -46,3 +46,5 @@ C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug
 C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\ContactPage.baml
 C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\SignInPage.baml
 C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\BuyPage.baml
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\SignUpPage.g.cs
+C:\Users\Matthew Low\Desktop\School\cpsc 471\cpsc471app\app\Group47App\obj\Debug\SignUpPage.baml

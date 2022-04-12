@@ -14,6 +14,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
 
+using System.Web;
+using System.Configuration;
+using System.Drawing;
+
 
 namespace Group47App
 {
@@ -109,6 +113,36 @@ namespace Group47App
             var nav = NavigationService.GetNavigationService(this);
 
             nav.Navigate(new MainPage());
+        }
+
+        private void sendQuestionButton_Click(object sender, RoutedEventArgs e)
+        {
+            string mainconn = "Data Source=vehico-server.database.windows.net;Initial Catalog=vehicle;Persist Security Info=True;User ID=vehico-server-admin;Password=ZTT3EW5DK3T6GE46$";
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+            SqlCommand insert = new SqlCommand("EXEC dbo.PushContactInfo @Name, @Email, @Phone_number, @Question", sqlconn);
+
+            if (nameTextBox.Text != "" && emailTextBox.Text != "" && phoneTextBox.Text != "" && questionTextBox.Text != "")
+            {
+                insert.Parameters.AddWithValue("@Name", nameTextBox.Text);
+                insert.Parameters.AddWithValue("@Email", emailTextBox.Text);
+                insert.Parameters.AddWithValue("@Phone_number", phoneTextBox.Text);
+                insert.Parameters.AddWithValue("@Question", questionTextBox.Text);
+
+                sqlconn.Open();
+                insert.ExecuteNonQuery();
+                sqlconn.Close();
+
+                errorText.Content = "Your question has been sent to our team!";
+                nameTextBox.Text = "";
+                emailTextBox.Text = "";
+                phoneTextBox.Text = "";
+                questionTextBox.Text = "";
+            }
+            else
+            {
+                errorText.Content = "Boxes marked with a * are required fields!";
+            }
+
         }
     }
 }

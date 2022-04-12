@@ -31,12 +31,74 @@
 
         </Grid>
 
-        <Grid Background="GhostWhite" Grid.ColumnSpan="3" Grid.Row="2">
+        <Grid Background="GhostWhite" Grid.ColumnSpan="3" Grid.Row="3">
+            
+        </Grid>
+
+        <StackPanel Name="Body"
+                    Grid.Row="3"
+                    Width="282"
+                    Height="478"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Grid.ColumnSpan="3"
+                    Background="GhostWhite">
+
             <Label Content="Contact Us"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
-                   FontWeight="Bold"/>
-        </Grid>
+                   FontWeight="Bold"
+                   Grid.RowSpan="1"
+                   FontSize="27"/>
+
+            <Label Content="Got any questions? Feel free to contact us below!"
+                   FontWeight="DemiBold"
+                   />
+
+            <Line X1="5"
+                  X2="277"
+                  Stroke="Black"/>
+
+            <Label Name="errorText"
+                   Content=""
+                   Width="262"
+                   Foreground="Red"/>
+
+            <Label Content="Name*:"
+                   Width="262"/>
+
+            <TextBox Name="nameTextBox"
+                     Width="262"/>
+
+            <Label Content="Email*:"
+                   Margin="0, 20, 0, 0"
+                   Width="262"/>
+
+            <TextBox Name="emailTextBox"
+                     Width="262"/>
+
+            <Label Content="Phone number*:"
+                   Margin="0, 20, 0, 0"
+                   Width="262"/>
+
+            <TextBox Name="phoneTextBox"
+                     Width="262"/>
+
+            <Label Content="Question*:"
+                   Margin="0, 20, 0, 0"
+                   Width="262"/>
+
+            <TextBox Name="questionTextBox"
+                     Width="262"/>
+
+            <Button Name="sendQuestionButton"
+                    Content="Submit Question"
+                    Margin="0, 40, 0, 0"
+                    Height="50"
+                    Width="262"
+                    Click="sendQuestionButton_Click"/>
+
+        </StackPanel>
 
         <Grid Grid.ColumnSpan="3" Grid.Row="2">
 

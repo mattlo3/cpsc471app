@@ -171,16 +171,9 @@ namespace Group47App
             sda.Fill(dt);
             sqlconn.Close();
 
-            // idk why i need this for loop but it doesnt compile unless i have it
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                for (int j = 0; j < dt.Columns.Count; j++)
-                {
-                    ModelSelect.Items.Clear();
-                    ModelSelect.Items.Add("Any");
-                    ModelSelect.SelectedIndex = 0;
-                }
-            }
+            ModelSelect.Items.Clear();
+            ModelSelect.Items.Add("Any");
+            ModelSelect.SelectedIndex = 0;
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {

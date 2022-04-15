@@ -222,7 +222,7 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"/>
 
-        <TextBlock Text="18:06"
+        <TextBlock Text="Matt"
                    Foreground="White"
                    Grid.Column="2"
                    VerticalAlignment="Center"
@@ -333,7 +333,7 @@
                     HorizontalAlignment="Center"
                     MouseDown="Logo_MouseDown">
 
-            <Label Content="LOGO"
+            <Label Content="HOME"
                    Foreground="White"
                    HorizontalAlignment="Center"
                    Margin="0, 10, 0, 0"/>
@@ -351,7 +351,7 @@
                     HorizontalAlignment="Center"
                     MouseDown="Noti_MouseDown">
             
-            <Label Content="NOTI"
+            <Label Content=""
                    Foreground="White"
                    HorizontalAlignment="Center"
                    Margin="0, 10, 0, 0"/>

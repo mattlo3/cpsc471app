@@ -117,7 +117,7 @@ namespace Group47App
 
         private void sendQuestionButton_Click(object sender, RoutedEventArgs e)
         {
-            string mainconn = "Data Source=vehico-server.database.windows.net;Initial Catalog=vehicle;Persist Security Info=True;User ID=vehico-server-admin;Password=ZTT3EW5DK3T6GE46$";
+            string mainconn = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
             SqlCommand insert = new SqlCommand("EXEC dbo.PushContactInfo @Name, @Email, @Phone_number, @Question", sqlconn);
 

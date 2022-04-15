@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
 
 namespace Group47App
 {
@@ -38,7 +39,7 @@ namespace Group47App
             ModelSelect.SelectedIndex = 0;
             PriceSelect.SelectedIndex = 0;
 
-            string mainconn = "Data Source=vehico-server.database.windows.net;Initial Catalog=vehicle;Persist Security Info=True;User ID=vehico-server-admin;Password=ZTT3EW5DK3T6GE46$";
+            string mainconn = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
             string sqlquery = "select distinct Make from [dbo].[carsOnMarket]";
             SqlDataAdapter sda = new SqlDataAdapter(sqlquery, sqlconn);
@@ -160,7 +161,7 @@ namespace Group47App
         {
             string Make = MakeSelect.SelectedItem.ToString();
 
-            string mainconn = "Data Source=vehico-server.database.windows.net;Initial Catalog=vehicle;Persist Security Info=True;User ID=vehico-server-admin;Password=ZTT3EW5DK3T6GE46$";
+            string mainconn = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
             var cmmd = new SqlCommand(@"select distinct Model from [dbo].[carsOnMarket] where Make = @Make", sqlconn);
             cmmd.Parameters.Add("@Make", SqlDbType.VarChar);
@@ -223,7 +224,7 @@ namespace Group47App
                 Console.WriteLine(price);
                 Console.WriteLine("1");
 
-                string mainconn = "Data Source=vehico-server.database.windows.net;Initial Catalog=vehicle;Persist Security Info=True;User ID=vehico-server-admin;Password=ZTT3EW5DK3T6GE46$";
+                string mainconn = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
                 SqlConnection sqlconn = new SqlConnection(mainconn);
                 var cmmd = new SqlCommand(@"select Make, Model, Year, Mileage, Price from [dbo].[carsOnMarket] where Make = @Make and Price < @priceInt", sqlconn);
                 cmmd.Parameters.Add("@Make", SqlDbType.VarChar);
@@ -266,7 +267,7 @@ namespace Group47App
                 Console.WriteLine(priceInt);
                 Console.WriteLine("2");
 
-                string mainconn = "Data Source=vehico-server.database.windows.net;Initial Catalog=vehicle;Persist Security Info=True;User ID=vehico-server-admin;Password=ZTT3EW5DK3T6GE46$";
+                string mainconn = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
                 SqlConnection sqlconn = new SqlConnection(mainconn);
                 var cmmd = new SqlCommand(@"select Make, Model, Year, Mileage, Price from [dbo].[carsOnMarket] where Price < @priceInt", sqlconn);
                 cmmd.Parameters.Add("@Make", SqlDbType.VarChar);
@@ -309,7 +310,7 @@ namespace Group47App
                 Console.WriteLine(priceInt);
                 Console.WriteLine("3");
 
-                string mainconn = "Data Source=vehico-server.database.windows.net;Initial Catalog=vehicle;Persist Security Info=True;User ID=vehico-server-admin;Password=ZTT3EW5DK3T6GE46$";
+                string mainconn = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
                 SqlConnection sqlconn = new SqlConnection(mainconn);
                 var cmmd = new SqlCommand(@"select Make, Model, Year, Mileage, Price from [dbo].[carsOnMarket] where Make = @Make and Model = @Model and Price < @priceInt", sqlconn);
                 cmmd.Parameters.Add("@Make", SqlDbType.VarChar);

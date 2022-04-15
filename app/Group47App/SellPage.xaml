@@ -32,11 +32,175 @@
         </Grid>
 
         <Grid Background="GhostWhite" Grid.ColumnSpan="3" Grid.Row="2">
-            <Label Content="Sell A Car"
+            
+        </Grid>
+
+        <ScrollViewer Grid.Row="3"
+                      Grid.ColumnSpan="3"
+                      HorizontalAlignment="Left"
+                      Background="GhostWhite"
+                      Width="282"
+                      Height="478"
+                      VerticalScrollBarVisibility="Hidden">
+
+            <StackPanel Name="Body"
+                    Grid.Row="3"
+                    Width="282"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Grid.ColumnSpan="3"
+                    Background="GhostWhite">
+
+                <Label Content="Sell A Car"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
+                   FontWeight="Bold"
+                   Grid.RowSpan="1"
+                   FontSize="27"/>
+
+                <Label Content="Enter the information of the car you'd like to sell!"
+                   FontWeight="DemiBold"
+                   />
+
+                <Line X1="5"
+                  X2="277"
+                  Stroke="Black"/>
+
+                <Label Content="Make:"
+                    Margin="10, 0, 0, 0"
+                    FontWeight="Bold"/>
+
+                <ComboBox Name="MakeSelect"
+                          Width="262">
+                </ComboBox>
+
+                <Label Content="Model:"
+                   Margin="10, 20, 0, 0"
                    FontWeight="Bold"/>
-        </Grid>
+
+                <TextBox Name="ModelTextBox"
+                          Width="262">
+                </TextBox>
+
+                <Label Content="Year:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <ComboBox Name="YearSelect"
+                          Width="262">
+                </ComboBox>
+
+                <Label Content="Mileage:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <TextBox Name="MileageTextBox"
+                          Width="262">
+                </TextBox>
+
+                <Label Content="Type:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <ComboBox Name="TypeSelect"
+                          Width="262">
+                </ComboBox>
+
+                <Label Content="Engine:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <TextBox Name="EngineTextBox"
+                          Width="262">
+                </TextBox>
+
+                <Label Content="Engine Type:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <ComboBox Name="EngineSelect"
+                          Width="262">
+                </ComboBox>
+
+                <Label Content="Transmission:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <ComboBox Name="TransmissionSelect"
+                          Width="262">
+                </ComboBox>
+
+                <Label Content="Color:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <TextBox Name="ColorTextBox"
+                          Width="262">
+                </TextBox>
+
+                <Label Content="Trim:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <TextBox Name="TrimTextBox"
+                          Width="262">
+                </TextBox>
+
+                <Label Content="Fuel Type:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <ComboBox Name="FuelSelect"
+                          Width="262">
+                </ComboBox>
+
+                <Label Content="Country of Origin:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <ComboBox Name="CountrySelect"
+                          Width="262">
+                </ComboBox>
+
+                <Label Content="Price:"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <TextBox Name="PriceTextBox"
+                          Width="262">
+                </TextBox>
+
+                <Label Name="errorText"
+                   Content=""
+                   Width="262"
+                   Margin="0, 10, 0, 0"
+                   Foreground="Red"/>
+
+                <Button Name="ListCarButton"
+                    Content="Place Car For Sale"
+                    Margin="0, 20, 0, 0"
+                    Height="50"
+                    Width="262"
+                    Click="ListCarButton_Click"/>
+
+                <Label Content=""
+                   Margin="0, 20, 0, 0"
+                   Width="262"
+                   FontWeight="Bold"/>
+
+                <Label Content=""
+                   Margin="0, 20, 0, 0"
+                   Width="262"
+                   FontWeight="Bold"/>
+
+                <Label Content=""
+                   Margin="0, 20, 0, 0"
+                   Width="262"
+                   FontWeight="Bold"/>
+
+            </StackPanel>
+
+        </ScrollViewer>
 
         <Grid Grid.ColumnSpan="3" Grid.Row="2">
 

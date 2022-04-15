@@ -13,7 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
-
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity;
+using System.Web;
+using Microsoft.Owin.Security;
 
 namespace Group47App
 {
@@ -113,7 +116,24 @@ namespace Group47App
 
         private void signUpButton_Click(object sender, RoutedEventArgs e)
         {
+            // Default UserStore constructor uses the default connection string named: DefaultConnection
+            var userStore = new UserStore<IdentityUser>();
+            var manager = new UserManager<IdentityUser>(userStore);
 
+            var user = new IdentityUser() { UserName = nameTextBox.Text };
+            IdentityResult result = manager.Create(user, passTextBox.Text);
+
+            if (result.Succeeded)
+            {
+                var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+                var userIdentity = manager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+                errorText.Content = string.Format("User {0} was created successfully!", user.UserName);
+                
+            }
+            else
+            {
+                errorText.Content = result.Errors.FirstOrDefault();
+            }
         }
     }
 }

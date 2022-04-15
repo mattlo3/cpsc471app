@@ -32,21 +32,133 @@
         </Grid>
 
         <Grid Background="White" Grid.ColumnSpan="3" Grid.Row="2">
-            <TextBox Name="SearchBar"  
-                     HorizontalAlignment="Left" 
-                     Height="25"  
-                     TextWrapping="NoWrap"  
-                     VerticalAlignment="Top" 
-                     Width="188"/>
-            
-            <Button Name="SearchButton" 
-                    Content="Search" 
-                    HorizontalAlignment="Right"  
-                    VerticalAlignment="Top" Width="94" 
-                    Height="25" 
-                    Click="Button_Click"/>
 
         </Grid>
+
+        <ScrollViewer Grid.Row="3"
+                      Grid.ColumnSpan="3"
+                      HorizontalAlignment="Left"
+                      Background="GhostWhite"
+                      Width="282"
+                      Height="478"
+                      VerticalScrollBarVisibility="Hidden">
+
+            <StackPanel Name="Body"
+                    Grid.Row="3"
+                    Width="282"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Grid.ColumnSpan="3"
+                    Background="GhostWhite">
+
+                <Label Content="Filter Search"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontWeight="Bold"
+                   Grid.RowSpan="1"
+                   FontSize="27"/>
+
+                <Label Content="Narrow down your search results with filters!"
+                   FontWeight="DemiBold"
+                   />
+
+                <Line X1="5"
+                  X2="277"
+                  Stroke="Black"/>
+
+                <Label Name="errorText"
+                   Content=""
+                   Width="262"
+                   Foreground="Red"/>
+
+                <Label Content="Select Make"
+                    Margin="10, 0, 0, 0"
+                    FontWeight="Bold"/>
+
+                <ComboBox Name="MakeSelect"
+                          Width="262"
+                          SelectionChanged="MakeSelect_SelectionChanged">
+                </ComboBox>
+
+                <Label Content="Select Model"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <ComboBox Name="ModelSelect"
+                          Width="262">
+                </ComboBox>
+
+                <Label Content="Select Max Price"
+                   Margin="10, 20, 0, 0"
+                   FontWeight="Bold"/>
+
+                <ComboBox Name="PriceSelect"
+                          Width="262">
+                </ComboBox>
+
+                <Button Name="FilterButton"
+                    Content="Filter Search"
+                    Margin="0, 20, 0, 0"
+                    Height="50"
+                    Width="262"
+                    Click="FilterButton_Click"/>
+
+                <Label Content="Results"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontWeight="Bold"
+                   Grid.RowSpan="1"
+                   FontSize="27"
+                   Margin="0, 30, 0, 0"/>
+
+                <Line X1="5"
+                  X2="277"
+                  Stroke="Black"/>
+
+                <Label Content="Make    Model   Year    Miles   Price"
+                       Margin="10, 10, 0, 0"
+                       FontSize="14"
+                       FontWeight="Bold">
+                    
+                </Label>
+                
+                <FlowDocumentPageViewer>
+                    <FlowDocument>
+                        <Table CellSpacing="0">
+                            <Table.Columns>
+                                <TableColumn/>
+                                <TableColumn/>
+                                <TableColumn/>
+                                <TableColumn/>
+                                <TableColumn/>
+                            </Table.Columns>
+
+                            <TableRowGroup Name="ResultsData">
+                                
+
+                            </TableRowGroup>
+                        </Table>
+                    </FlowDocument>
+                </FlowDocumentPageViewer>
+
+                <Label Content=""
+                   Margin="0, 20, 0, 0"
+                   Width="262"
+                   FontWeight="Bold"/>
+
+                <Label Content=""
+                   Margin="0, 20, 0, 0"
+                   Width="262"
+                   FontWeight="Bold"/>
+
+                <Label Content=""
+                   Margin="0, 20, 0, 0"
+                   Width="262"
+                   FontWeight="Bold"/>
+
+            </StackPanel>
+
+        </ScrollViewer>
 
         <Grid Grid.ColumnSpan="3" Grid.Row="2">
 

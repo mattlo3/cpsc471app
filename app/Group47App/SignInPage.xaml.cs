@@ -13,7 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
-
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity;
+using System.Web;
+using Microsoft.Owin.Security;
+using System.Web.UI.WebControls;
 
 namespace Group47App
 {
@@ -25,6 +29,8 @@ namespace Group47App
         public SignInPage()
         {
             InitializeComponent();
+
+            
         }
 
         private void Menu_MouseDown(object sender, MouseButtonEventArgs e)
@@ -109,6 +115,34 @@ namespace Group47App
             var nav = NavigationService.GetNavigationService(this);
 
             nav.Navigate(new MainPage());
+        }
+
+        private void signInButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            var userStore = new UserStore<IdentityUser>();
+            var userManager = new UserManager<IdentityUser>(userStore);
+            var user = userManager.Find(nameTextBox.Text, passTextBox.Text);
+
+            if (user != null)
+            {
+                var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+                var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+
+                authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, userIdentity);
+                // Response.Redirect("Sign.aspx");
+            }
+            else
+            {
+                errorText.Content = "Invalid username or password.";
+                // LoginStatus.Visible = true;
+            }
+        }
+
+        private void signUpButton_Click(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+
+            nav.Navigate(new SignUpPage());
         }
     }
 }

@@ -32,11 +32,108 @@
         </Grid>
 
         <Grid Background="GhostWhite" Grid.ColumnSpan="3" Grid.Row="2">
-            <Label Content="FAQ"
+            
+        </Grid>
+
+        <ScrollViewer Grid.Row="3"
+                      Grid.ColumnSpan="3"
+                      HorizontalAlignment="Left"
+                      Background="GhostWhite"
+                      Width="282"
+                      Height="478"
+                      VerticalScrollBarVisibility="Hidden">
+
+            <StackPanel Name="Body"
+                    Grid.Row="3"
+                    Width="282"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Grid.ColumnSpan="3"
+                    Background="GhostWhite">
+
+                <Label Content="FAQ"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
+                   FontWeight="Bold"
+                   Grid.RowSpan="1"
+                   FontSize="27"/>
+
+                <Label Content="Here are some frequently asked questions!"
+                   FontWeight="DemiBold"
+                   />
+
+                <Line X1="5"
+                  X2="277"
+                  Stroke="Black"/>
+
+                <Label Name="errorText"
+                   Content=""
+                   Width="262"
+                   Foreground="Red"/>
+
+                <Label Content="How does mileage affect my car's value?"
+                    Width="262"
+                    FontWeight="Bold"/>
+
+                <TextBlock TextWrapping="Wrap"
+                           Width="262"
+                           Text="Generally, the more miles/kilometers a car has, the less it's worth."
+                           />
+
+                <Label Content="What's a good price for my kid's first car?"
+                   Margin="0, 20, 0, 0"
+                   Width="262"
                    FontWeight="Bold"/>
-        </Grid>
+
+                <TextBlock TextWrapping="Wrap"
+                           Width="262"
+                           Text="$7,500 at the absolute max, however that depends on your budget. See our Car Buying Tips for more information!"
+                           />
+
+                <TextBlock TextWrapping="Wrap"
+                           Margin="0, 20, 0, 0"
+                           Width="262"
+                           FontWeight="Bold"
+                           Text="I want to buy a used car. How do I know if the price is too high?"
+                           />
+
+                <TextBlock TextWrapping="Wrap"
+                           Width="262"
+                           Text="Each car listing compares the price with the average price of that car and reports back to you."
+                           />
+
+                <TextBlock TextWrapping="Wrap"
+                           Margin="0, 20, 0, 0"
+                           Width="262"
+                           FontWeight="Bold"
+                           Text="If you have any other questions, please reach out to us by navigating to the Contact Us page!"
+                           />
+
+                <Button Name="ContactUsButton"
+                    Content="Contact Us"
+                    Margin="0, 20, 0, 0"
+                    Height="50"
+                    Width="262"
+                    Click="ContactUsButton_Click"/>
+
+                <Label Content=""
+                   Margin="0, 20, 0, 0"
+                   Width="262"
+                   FontWeight="Bold"/>
+
+                <Label Content=""
+                   Margin="0, 20, 0, 0"
+                   Width="262"
+                   FontWeight="Bold"/>
+
+                <Label Content=""
+                   Margin="0, 20, 0, 0"
+                   Width="262"
+                   FontWeight="Bold"/>
+
+            </StackPanel>
+
+        </ScrollViewer>
 
         <Grid Grid.ColumnSpan="3" Grid.Row="2">
 

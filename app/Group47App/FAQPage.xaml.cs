@@ -110,5 +110,12 @@ namespace Group47App
 
             nav.Navigate(new MainPage());
         }
+
+        private void ContactUsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+
+            nav.Navigate(new ContactPage());
+        }
     }
 }

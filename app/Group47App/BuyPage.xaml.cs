@@ -360,7 +360,7 @@ namespace Group47App
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 sqlconn.Close();
-                errorText.Text = "You have successfully bought " + dt.Rows[0][0].ToString() + " " + dt.Rows[0][1].ToString() + dt.Rows[0][2].ToString() + " for $" + dt.Rows[0][3].ToString() + " with ID " + id;
+                errorText.Text = "Auctioneer: You have won " + dt.Rows[0][0].ToString() + " " + dt.Rows[0][1].ToString() + dt.Rows[0][2].ToString() + " for $" + dt.Rows[0][3].ToString() + " with ID " + id;
 
                 SqlConnection sqlconn2 = new SqlConnection(con);
                 var cmmd2 = new SqlCommand(@"delete from [dbo].[carsOnMarket] where CarID = @id", sqlconn2);
